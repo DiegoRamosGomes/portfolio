@@ -1,4 +1,17 @@
-<div class="d-flex justify-content-center align-items-center vh-100 bg-dark">
+<style>
+    .content-home {
+        height: 93vh;
+    }
+    .follow-to-projects {
+        height: 7vh;
+    }
+
+    .follow-to-projects a i {
+        font-size: 40px;
+    }
+</style>
+
+<div class="d-flex justify-content-center align-items-center bg-dark content-home">
     <div>
         <img alt="Imagem de perfil" class="rounded-circle mx-auto d-block w-25"
              src="{{ asset('storage/profile_photo.svg') }}">
@@ -29,4 +42,9 @@
             </li>
         </ul>
     </div>
+</div>
+<div class="bg-dark text-center follow-to-projects">
+    <a href="#projects" class="text-white">
+        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+    </a>
 </div>
