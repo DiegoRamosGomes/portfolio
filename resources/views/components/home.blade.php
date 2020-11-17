@@ -2,6 +2,7 @@
     .content-home {
         height: 93vh;
     }
+
     .follow-to-projects {
         height: 7vh;
     }
@@ -44,7 +45,16 @@
     </div>
 </div>
 <div class="bg-dark text-center follow-to-projects">
-    <a href="#projects" class="text-white">
+    <a href="#projects" class="text-white" id="scrollToProjects">
         <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
     </a>
 </div>
+
+<script>
+    $("#scrollToProjects").on('click', function () {
+        console.log('click');
+        $('html, body').animate({
+            scrollTop: $("#projects").offset().top
+        }, 2000);
+    });
+</script>
