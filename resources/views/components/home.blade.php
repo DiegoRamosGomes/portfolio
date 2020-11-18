@@ -52,7 +52,6 @@
 
 <script>
     $("#scrollToProjects").on('click', function () {
-        console.log('click');
         $('html, body').animate({
             scrollTop: $("#projects").offset().top
         }, 2000);

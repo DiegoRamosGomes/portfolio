@@ -44,6 +44,7 @@
 <main>
     <x-home></x-home>
     <x-projects-list></x-projects-list>
+    <x-footer></x-footer>
 </main>
 </body>
 </html>

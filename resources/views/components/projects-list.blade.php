@@ -12,12 +12,16 @@
     }
 </style>
 
-<div id="projects" class="d-flex flex-wrap justify-content-center align-self-center my-5">
-    @foreach ($projects as $project)
-        <a target="_blank" href="{{ $project['url'] ?? '#' }}" class="d-item text-center text-dark px-5">
-            <img src="{{ asset("projects_logo/{$project['image']}") }}" alt="{{ $project['title'] }}" class="rounded-circle">
-            <h1 class="my-3">{{ $project['title'] }}</h1>
-            <p>{{ $project['description'] }}</p>
-        </a>
-    @endforeach
+<div id="projects" class="mt-5">
+    <h1 class="text-center">Projetos Desenvolvidos</h1>
+    <div class="d-flex flex-wrap justify-content-center align-self-center my-5">
+        @foreach ($projects as $project)
+            <a target="_blank" href="{{ $project['url'] ?? '#' }}" class="d-item text-center text-dark px-5 border">
+                <img src="{{ asset("projects_logo/{$project['image']}") }}" alt="{{ $project['title'] }}"
+                     class="rounded-circle">
+                <h1 class="my-3">{{ $project['title'] }}</h1>
+                <p>{{ $project['description'] }}</p>
+            </a>
+        @endforeach
+    </div>
 </div>
