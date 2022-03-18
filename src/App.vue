@@ -7,7 +7,7 @@
       <Link url="https://www.linkedin.com/in/diego-ramos-493221176/" legend="Linkedin" theme="linkedin" />
       <Link url="https://github.com/DiegoRamosGomes/" legend="Github" theme="github" />
       <Link url="mailto:contato@digomes.com.br" legend="Email" theme="mail" />
-      <Link url="https://wa.me?phone=5548991417009" legend="Whatsapp" theme="whatsapp" />
+      <Link url="https://wa.me/?phone=5548991417009" legend="Whatsapp" theme="whatsapp" />
     </div>
   </div>
 </template>
