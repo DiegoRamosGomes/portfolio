@@ -3,11 +3,11 @@
     <Avatar />
     <Description />
     <div class="links">
-      <Link url="https://www.instagram.com/devdiegogomes/" legend="Instagram" theme="instagram" />
-      <Link url="https://www.linkedin.com/in/diego-ramos-493221176/" legend="Linkedin" theme="linkedin" />
-      <Link url="https://github.com/DiegoRamosGomes/" legend="Github" theme="github" />
-      <Link url="mailto:contato@digomes.com.br" legend="Email" theme="mail" />
-      <Link url="https://wa.me/?phone=5548991417009" legend="Whatsapp" theme="whatsapp" />
+      <Link url="https://www.instagram.com/devdiegogomes/" legend="Instagram" theme="instagram" gt-event="instagram"/>
+      <Link url="https://www.linkedin.com/in/diego-ramos-493221176/" legend="Linkedin" theme="linkedin" gt-event="linkedin"/>
+      <Link url="https://github.com/DiegoRamosGomes/" legend="Github" theme="github" gt-event="github"/>
+      <Link url="mailto:contato@digomes.com.br" legend="Email" theme="mail" gt-event="mail"/>
+      <Link url="https://wa.me/?phone=5548991417009" legend="Whatsapp" theme="whatsapp" gt-event="whatsapp"/>
     </div>
   </div>
 </template>

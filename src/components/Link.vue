@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <a class="link" v-bind:href=url :style="themes">
+    <a target="_blank" class="link" v-bind:href=url :style="themes" @click=handler>
       {{ this.legend }}
     </a>
   </div>
@@ -12,16 +12,10 @@ export default {
   props: {
     url: {type: [String], default: '#', required: true},
     legend: {type: [String], required: true},
-    theme: {type: [String], required: false}
+    theme: {type: [String], required: false},
+    gtEvent: {type: String, required: true}
   },
   computed: {
-    icon() {
-      if (this.theme === 'instagram') {
-        // return 'https://img.icons8.com/fluency-systems-regular/48/000000/instagram-new--v1.png"';
-        return require('@/assets/instagram.svg');
-      }
-      return {}
-    },
     themes() {
       if (this.theme === 'github') {
         return {
@@ -60,6 +54,11 @@ export default {
       }
 
       return {}
+    }
+  },
+  methods: {
+    handler() {
+      this.$gtag.event(`click_social_network`, { social: this.gtEvent })
     }
   }
 }
