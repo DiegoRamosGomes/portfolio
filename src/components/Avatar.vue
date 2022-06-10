@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFt2WYVuEJC9g/profile-displayphoto-shrink_800_800/0/1639094319564?e=1652918400&v=beta&t=NkTRgyYi5y9Oo3-sM4umUOpSLrz3iLCbC3AqgX_wYEY"
+    <img :src="'/images/eu.jpeg'"
          alt="Avatar" class="avatar">
   </div>
 </template>
